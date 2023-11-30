@@ -50,13 +50,3 @@ CUDA_VISIBLE_DEVICES=0,1 python3 trainIC15.py --yaml=ic15_train   # run weak-sup
 
 ### Arguments
 * ```--yaml``` : configuration file name
-
-### Evaluation
-* In the official repository issues, the author mentioned that the first row setting F1-score is around 0.75.
-* In the official paper, it is stated that the result F1-score of the second row setting is 0.87.
-    * If you adjust post-process parameter 'text_threshold' from 0.85 to 0.75, then F1-score reaches to 0.856.
-
-| Training Dataset   | Evaluation Dataset   | Precision  | Recall  | F1-score  | pretrained model  |
-| ------------- |-----|:-----:|:-----:|:-----:|-----:|
-| SynthText      |  ICDAR2013 | 0.801 | 0.748 | 0.773| <a href="https://drive.google.com/file/d/1enVIsgNvBf3YiRsVkxodspOn55PIK-LJ/view?usp=sharing">download link</a>|
-| SynthText + ICDAR2015      | ICDAR2015  | 0.909 | 0.794 | 0.848| <a href="https://drive.google.com/file/d/1qUeZIDSFCOuGS9yo8o0fi-zYHLEW6lBP/view">download link</a>|
